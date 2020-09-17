@@ -23,7 +23,10 @@ def long_planeteer_calls(planeteer_calls)
   
   
   planeteer_calls.count do |i|
-    i.size > 4
+   if i.size > 4
+     return true
+   else
+     return false
   end
 end
 
