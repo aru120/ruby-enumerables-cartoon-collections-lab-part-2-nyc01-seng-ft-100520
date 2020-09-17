@@ -22,7 +22,7 @@ def long_planeteer_calls(planeteer_calls)
   # Return the boolean result of this check
   
   
-  planeteer_calls.count do |i|
+  planeteer_calls.each do |i|
    if i.size > 4
      return true
    else
