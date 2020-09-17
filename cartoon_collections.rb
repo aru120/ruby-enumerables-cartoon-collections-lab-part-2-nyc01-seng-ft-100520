@@ -23,7 +23,7 @@ def long_planeteer_calls(planeteer_calls)
   
   
   planeteer_calls.each do |i|
-   if i.size > 4
+   if i.length > 4
      return true
    else
      return false
