@@ -22,11 +22,8 @@ def long_planeteer_calls(planeteer_calls)
   # Return the boolean result of this check
   
   
-  planeteer_calls.each do |i|
-   if i.length > 4
-     return true
-   else
-     return false
+  planeteer_calls.none? do |i|
+    i.length > 4
   end
 end
 
